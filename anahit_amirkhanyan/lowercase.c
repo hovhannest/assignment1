@@ -4,13 +4,17 @@
 
 int main()
 {
+	int i, j;
 	char word[1000];
-	scanf("%s", word);
-	int i;
-	for(i = 0; i <=(word[i]); i++)
-	{
-		word[i] = tolower(word[i]);
-	}
-
-	printf("%s\n", word);
+	
+	do{
+		j = scanf("%s", word);
+		for(i = 0; i <=(word[i]); i++)
+		{
+			word[i] = tolower(word[i]);
+		}
+		printf("%s", word);
+	}while (j != EOF);
+	
+	return 0;
 }

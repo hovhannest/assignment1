@@ -13,7 +13,7 @@ int main()
 		{
 			word[i] = tolower(word[i]);
 		}
-		printf("%s", word);
+		printf("%s ", word);
 	}while (j != EOF);
 	
 	return 0;

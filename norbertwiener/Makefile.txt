@@ -1,3 +1,0 @@
-all: 
-	cc -o tolowercase HW2_tolowercase.c
-	./tolowercase

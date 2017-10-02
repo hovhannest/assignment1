@@ -44,6 +44,6 @@ int main(void)
         write(2, "There was an error writing to standard out\n", 44);
         return -1;
     }
-
+	printf("\n");
     return 0;
 }

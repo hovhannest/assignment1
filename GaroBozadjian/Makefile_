@@ -1,6 +1,0 @@
-all:
-	dmd makewords.d
-usage.:
-	echo "make words"
-run:
-	./makewords

@@ -1,6 +1,11 @@
-usage:
-	echo "make words"
-compile:
-	dmd makewords.d
-run:
-	./makewords
+COMPILER="dmd"
+
+all: makewords
+	echo "done"
+
+
+makewords: makewords.d
+	$(COMPILER) makewords.d
+
+
+

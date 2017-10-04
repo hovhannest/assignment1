@@ -1,6 +1,10 @@
-usage:
-	echo " assci "
-compile:
-	cc assci.c -o assci
-run:
-	./assci
+COMPILER= "gcc"
+	
+
+
+all: assci 
+        
+	echo"done"
+
+ascci: ascci.c 
+	$(COMPILER)ascci.c -o assci

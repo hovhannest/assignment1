@@ -2,22 +2,28 @@
 
 int main()
 {
+
 char c;
+
 printf("Enter a character:");
 
-scanf("%c,&c" );
-if(uppercase){
-c=c+32;
+
+while(scanf("%c",&c)==1){
+
+	if(c>='A'&& c<='Z' ){
+
+      c=c+32;
+	}
+
+     
+printf("ASCII value of %c=%d",c,c);
 
 }
-else{
 
-printf("ASCII value of %c=%d",c,c)
 return 0;
 
-
 }
 
 
 
-}
+

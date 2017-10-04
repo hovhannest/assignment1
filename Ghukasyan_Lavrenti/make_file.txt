@@ -1,0 +1,3 @@
+ALL: 
+cc -o lowercase Lavrenti_Ghukasyan.c
+./lowercase 

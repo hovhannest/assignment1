@@ -27,22 +27,10 @@ int main( int argc, char *argv[] )  {
         err("You need to provide exactly 2 arguments.\n");
         return 1;
     }
-   printf("test-1");
    char *file1 = argv[1];
    char *file2 = argv[2];
-   printf("test0");
    FILE *fp1;
-   printf("test1");
    FILE *fp2;
-   printf("test2");
-   int err1 = readFromFile(file1, fp1);
-   printf("test3");
-   int err2 = readFromFile(file2, fp2);
-   printf("test4");
-   if(err1 || err2) {
-       return err1 || err2;
-   }
-   printf("test5\n");
    char line1[maxLength];
    char line2[maxLength];
    
@@ -51,16 +39,25 @@ int main( int argc, char *argv[] )  {
    // https://www.tutorialspoint.com/c_standard_library/c_function_fgets.htm
 
    
-    FILE* fp;
-    fp = fopen(file1, "r");
-
-    while(fgets(line1, maxLength, (FILE*) fp)) {
-        printf("%s\n", line1);
+   if ((fp1 = fopen(file1, "r")) == NULL) {
+        err("Error opening file, no such file");
+        err(file1);
+        return 1;
     }
 
+    if ((fp2 = fopen(file2, "r")) == NULL) {
+        err("Error opening file, no such file");
+        err(file2);
+        return 1;
+    }
+    
+    
+    while(fgets(line1, maxLength, (FILE*) fp1)) {
+        while(fgets(line2, maxLength, (FILE*) fp2)) {
+            
+        }
+    }
 
-    fclose(fp);
-
-    // fclose(fp1);
-    // fclose(fp2);
+    fclose(fp1);
+    fclose(fp2);
 }

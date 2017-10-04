@@ -8,11 +8,6 @@
 char line1[maxlen], line2[maxlen];
 bool f1_over, f2_over;
 
-bool read_line(char * s, FILE * F)
-{
-    return (fgets(s, maxlen, F) == NULL);
-}
-
 int compare_str(char * A, char * B)
 {
     int Alen = strlen(A);

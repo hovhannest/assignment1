@@ -1,10 +1,7 @@
-COMPILER= "gcc"
-	
+ALL:compile
+
+compile:
+	cc assci.c -o assci
 
 
-all: assci 
-        
-	echo"done"
 
-ascci: ascci.c 
-	$(COMPILER)ascci.c -o assci

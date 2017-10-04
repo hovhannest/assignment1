@@ -14,6 +14,6 @@
   		}
   	}
  	
-  	printf("%s\n", str);
+  	printf("%s\n", string);
   	return 0;
  }

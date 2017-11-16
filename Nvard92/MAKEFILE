@@ -1,0 +1,7 @@
+
+compiler="cc"
+all: tokenize
+	echo done
+ 
+ tokenize: tokenize.c
+ 	$(compiler) tokenize.c -o tokenize

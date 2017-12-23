@@ -11,6 +11,6 @@ int main()
         	charecter++;
 		}		
 		printf("%s", charecter);
-	}
+	//}
 	return 0;	 
 }
